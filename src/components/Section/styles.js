@@ -31,26 +31,50 @@ export const Content = styled.div`
 
   @media screen and (min-width: 1024px) {
     margin-left: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 20px;
     margin-right: 120px;
   }
 `;
 
 export const Title = styled.h1`
-  font-size: 48px;
   text-align: start;
+  font-size: 2.25rem;
+  width: 100%;
 
-  @media screen and (max-width: 768px) {
-    font-size: 40px;
+  @media screen and (min-width: 750px) {
+    font-size: 3rem;
+    width: 600px;
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 32px;
+  @media screen and (min-width: 1024px) {
+    font-size: 2.4rem;
+    width: 563px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2.75rem;
+    width: 610px;
   }
 `;
 
 export const TitleH2 = styled.h2`
-  font-size: 32px;
+  font-size: 1.7rem;
   text-align: start;
+
+  @media screen and (min-width: 750px) {
+    font-size: 2.5rem;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 2rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2.2rem;
+  }
 `;
 
 export const Description = styled.p`
@@ -60,17 +84,17 @@ export const Description = styled.p`
   color: #fff;
   display: flex;
   flex-direction: column;
-  font-size: 20px;
+  font-size: 1.2rem;
   text-align: start;
   width: 100%;
-  /* max-width: 600px; */
 
-  @media screen and (max-width: 768px) {
-    font-size: 24px;
+  @media screen and (min-width: 1024px) {
+    width: 90%;
+    font-size: 1.15rem;
   }
 
-  @media screen and (max-width: 480px) {
-    font-size: 18px;
+  @media screen and (min-width: 1200px) {
+    width: 100%;
   }
 `;
 
@@ -85,10 +109,31 @@ export const Fig = styled.div`
     height: 320px;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 750px) {
     font-size: 24px;
     display: flex;
     align-items: center;
+
+    img {
+      display: none;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    img {
+      display: flex;
+      width: 280px;
+      height: 280px;
+      margin-top: 35px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    img {
+      width: 320px;
+      margin-top: 30px;
+      height: 320px;
+    }
   }
 `;
 

@@ -1,7 +1,6 @@
-import { Header } from '../components/Header';
 import { useState } from 'react';
 import Navbar from '../components/Navbar';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 import Sidebar from '../components/Siderbar';
 import Section from '../components/Section';
 import About from '../components/About';

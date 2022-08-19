@@ -4,12 +4,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 300px;
-  padding-top: 300px;
+  padding: 0px 24px 100px 24px;
 `;
 
 export const StyledContactForm = styled.div`
-  width: 400px;
+  width: 100%;
 
   h2 {
     text-align: center;
@@ -62,13 +61,56 @@ export const StyledContactForm = styled.div`
       margin-top: 2rem;
       font-size: 16px;
       cursor: pointer;
-      background: rgb(249, 105, 14);
+      background: rgb(33 156 110);
       color: white;
       border: none;
       width: 100%;
       height: 35px;
       font-weight: 600;
       border-radius: 5px;
+
+      :active {
+        background: red;
+        border-top-color: red;
+      }
+
+      :hover {
+        background: rgb(28 175 121);
+      }
     }
+
+    @media screen and (min-width: 350px) {
+      padding: 0 20px;
+    }
+
+    @media screen and (min-width: 750px) {
+      padding: 0 185px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      width: 400px;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: unset;
+
+    form {
+      width: 750px;
+    }
+  }
+`;
+
+export const MailIcon = styled.div`
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+
+  img {
+    width: 250px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
   }
 `;

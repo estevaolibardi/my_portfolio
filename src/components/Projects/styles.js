@@ -6,10 +6,6 @@ export const Container = styled.div`
   padding-top: 150px;
   flex-direction: column;
 
-  hr {
-    display: none;
-  }
-
   [data-aos='example-anim2'] {
     -webkit-filter: grayscale(100%);
 
@@ -23,197 +19,20 @@ export const Container = styled.div`
   h1 {
     display: flex;
     justify-content: center;
-    font-size: 35px;
-
+    font-size: 1.8rem;
     padding-bottom: 50px;
   }
 
   a {
     text-decoration: none;
   }
-
-  @media screen and (max-width: 480px) {
-    /* padding: 100px 24px; */
-
-    h1 {
-      padding-bottom: 30px;
-    }
-
-    hr {
-      display: flex;
-      border: none;
-      width: 100%;
-      height: 50px;
-      margin-top: 0;
-      box-shadow: 0 20px 20px -20px #999999;
-      box-shadow: 0 20px 40px -20px #bfbfbf;
-    }
-
-    h2 {
-      padding-top: 10px;
-      font-size: 22px;
-    }
-  }
-`;
-
-export const Wrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  padding: 100px 0px 100px 0px;
-
-  h2 {
-    color: #46b47a;
-    padding-bottom: 15px;
-    margin-right: 20px;
-
-    :hover {
-      color: #00df88;
-    }
-  }
-
-  img {
-    cursor: pointer;
-    width: 340px;
-    height: 220px;
-    border-radius: 20px;
-
-    -webkit-filter: grayscale(100%);
-
-    :hover {
-      -webkit-filter: grayscale(0%);
-      /* transition: 1s; */
-      transition: background-color 1s ease;
-      transition-delay: 5s;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0px 0px 0px;
-
-    img {
-      width: 284px;
-      height: 167px;
-    }
-
-    p {
-      font-size: 15px;
-    }
-  }
-`;
-
-export const WrapperRight = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-direction: row-reverse;
-
-  h2 {
-    color: #46b47a;
-    padding-bottom: 15px;
-    margin-right: 20px;
-
-    :hover {
-      color: #00df88;
-    }
-  }
-
-  img {
-    cursor: pointer;
-    width: 340px;
-    height: 220px;
-    border-radius: 20px;
-    -webkit-filter: grayscale(100%);
-
-    :hover {
-      -webkit-filter: grayscale(0%);
-      transition: 1s;
-    }
-  }
-
-  @media screen and (max-width: 480px) {
-    flex-direction: column;
-    align-items: center;
-    padding: 50px 0px 0px 0px;
-
-    img {
-      width: 284px;
-      height: 167px;
-    }
-
-    p {
-      font-size: 15px;
-    }
-  }
-`;
-
-export const WrapperDescript = styled.div`
-  width: 680px;
-  padding: 0 100px 0px 58px;
-
-  @media screen and (max-width: 480px) {
-    width: 89%;
-    padding: 0;
-    text-align: justify;
-  }
-`;
-
-export const WrapperDesc = styled.div`
-  width: 600px;
-  padding: 0 58px 0px 100px;
-
-  @media screen and (max-width: 480px) {
-    width: 89%;
-    padding: 0;
-    text-align: justify;
-  }
-`;
-
-export const BoxTitle = styled.div`
-  display: flex;
-  justify-content: center;
-
-  svg {
-    margin-top: 4px;
-  }
-
-  a {
-    :link {
-      color: #212121;
-    }
-    :active {
-      color: #212121;
-    }
-    :visited {
-      color: #8c8c8c;
-    }
-    :hover {
-      color: #f3f3f3;
-    }
-  }
-`;
-
-export const Tech = styled.p`
-  padding: 18px 0px 10px 0px;
-  font-size: 16px;
-  font-family: 'Ubuntu', sans-serif;
-  line-height: 20px;
-
-  /* @media screen and (max-width: 480px) {
-    padding: 18px 0px 10px 0px;
-  } */
-`;
-
-export const Descript = styled.p`
-  font-size: 19px;
-  font-family: 'Ubuntu', sans-serif;
-  font-weight: lighter;
-  line-height: 25px;
 `;
 
 export const MoreBtn = styled.div`
   display: flex;
   justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
 
   button {
     color: #00bf75;
@@ -234,8 +53,26 @@ export const MoreBtn = styled.div`
   }
 `;
 
+export const Hr = styled.hr`
+  display: flex;
+  border: none;
+  width: 100%;
+  height: 50px;
+  margin-top: 0;
+  box-shadow: 0 20px 20px -20px #999999;
+
+  @media screen and (min-width: 750px) {
+    display: none;
+  }
+`;
+
 export const Wave = styled.div`
-  height: 250px;
+  height: 0px;
+
+  @media screen and (min-width: 750px) {
+    height: 130px;
+  }
+
   background-color: #ffffff;
   clip-path: polygon(
     100% 0%,

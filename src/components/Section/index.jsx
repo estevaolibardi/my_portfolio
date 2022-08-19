@@ -1,24 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import {
-  Container,
-  Content,
-  Title,
-  Description,
-  Fig,
-  TitleH2,
-  Techs,
-  Css,
-  Html,
-  Js,
-  Reac,
-} from './styles';
-import Dev from '../../styles/Dev.png';
-import Ham from '../../styles/light.png';
-import { AiFillHtml5 } from 'react-icons/ai';
-import { IoLogoCss3 } from 'react-icons/io';
-import { SiJavascript } from 'react-icons/si';
-import { FaReact } from 'react-icons/fa';
+import { Container, Content, Title, Description, Fig, TitleH2 } from './styles';
+import Dev from '../../assets/Dev.png';
+import Ham from '../../assets/light.png';
 
 const Section = ({ children, register }) => {
   const [over, setOver] = useState(false);

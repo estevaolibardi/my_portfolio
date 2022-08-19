@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { animateScroll } from 'react-scroll';
 import { useNavigate } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import {
@@ -57,7 +56,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                About
+                Sobre
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -67,9 +66,9 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={-60}
+                offset={-30}
               >
-                Projects
+                Projetos
               </NavLinks>
             </NavItem>
             <NavItem>
@@ -79,7 +78,7 @@ const Navbar = ({ toggle }) => {
                 duration={500}
                 spy={true}
                 exact="true"
-                offset={10}
+                offset={-10}
                 // onClick={() => {
                 //   const anchor = document.querySelector('#contact');
                 //   anchor.scrollIntoView({
@@ -88,13 +87,13 @@ const Navbar = ({ toggle }) => {
                 //   });
                 // }}
               >
-                Contact
+                Contato
               </NavLinks>
             </NavItem>
 
             <NavBtn>
               <a
-                href=" https://drive.google.com/file/d/1-39BBOutvO8cHKbsjlg2tgJFvPRo9rf4/view"
+                href="https://drive.google.com/file/d/1tIAcp1D9t2AO0GrhAzpxlmfpnmafZpse/view"
                 target="_blank"
                 rel="noreferrer"
               >

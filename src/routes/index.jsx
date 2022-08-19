@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom';
-import MainPage from '../pages/main_page';
-import AllProjects from '../pages/projects';
+import MainPage from '../pages/Home';
+import AllProjects from '../pages/AllProjects';
 
 const Router = () => {
   return (
     <Routes>
       <Route path="/" element={<MainPage />} />
-      <Route path="/projects" element={<AllProjects />} />
+      <Route path="/projetos" element={<AllProjects />} />
     </Routes>
   );
 };

@@ -13,7 +13,7 @@ import {
   HardBox,
   Wave,
 } from './styles';
-import Libardi from '../../styles/tete.png';
+import Libardi from '../../assets/me.jpg';
 import { BsInstagram } from 'react-icons/bs';
 import { FaLinkedin } from 'react-icons/fa';
 import { RiInstagramFill } from 'react-icons/ri';
@@ -53,7 +53,7 @@ const About = () => {
             área de programação recentemente. Acho fascinante estar em uma área
             em que estou constantemente aprendendo novas tecnologias, resolvendo
             problemas, exercitando raciocínio lógico e tendo a perspectiva de
-            ser um profissional cada vez mais valorizado e completo.
+            ser um profissional cada vez mais completo e valorizado.
           </p>
         </Wrapper>
       </Box>
@@ -86,7 +86,7 @@ const About = () => {
                   <li>Django</li>
                   <li>Docker</li>
                   <li>Context-Api</li>
-                  <li>Styled-Components</li>
+                  <li>Styled-C</li>
                 </ul>
               </div>
             </Skills>

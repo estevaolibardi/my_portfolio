@@ -36,9 +36,10 @@ export const GlobalStyle = createGlobalStyle`
         --enhanced-glow-color: rgb(212, 255, 206);
         --btn-color: #1fff676e;
         --btn-color-text: rgb(36, 166, 13);
-        @media (max-width: 768px) {
-            font-size: 12px;
-        }
+
+        /* @media (max-width: 768px) {
+            font-size: 0.75rem;
+        } */
     }
     
    

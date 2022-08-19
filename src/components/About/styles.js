@@ -11,7 +11,7 @@ export const Container = styled.div`
   @media screen and (max-width: 480px) {
     flex-direction: column;
     align-items: center;
-    padding: 100px 24px;
+    padding: 0px 24px;
   }
 `;
 
@@ -33,32 +33,72 @@ export const ImgContainer = styled.div`
   @media screen and (max-width: 480px) {
     padding: 0;
   }
+
+  @media screen and (max-width: 1024px) {
+    img {
+      width: 220px;
+      height: 275px;
+    }
+  }
 `;
 
 export const Box = styled.div`
   display: flex;
   justify-content: center;
   padding-top: 40px;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
 `;
 
 export const HardSkills = styled.div`
   display: flex;
-
   justify-content: center;
-
   margin-top: 50px;
+  margin-bottom: 100px;
+
+  @media screen and (min-width: 750px) {
+    width: 100%;
+    display: unset;
+    justify-content: unset;
+  }
+
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 export const TechContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 547px;
+  /* width: 547px; */
   justify-content: space-around;
+  align-items: center;
 
   h2 {
     font-size: 25px;
     color: #46b47a;
     padding-bottom: 20px;
+  }
+
+  @media screen and (min-width: 750px) {
+    width: 600px;
+    h2 {
+      text-align: center;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 547px;
+    align-items: flex-start;
+
+    h2 {
+      text-align: start;
+    }
   }
 `;
 
@@ -66,45 +106,126 @@ export const Skills = styled.div`
   display: flex;
   flex-direction: column;
   font-size: 18px;
-  flex-direction: row;
   justify-content: space-evenly;
 
-  div {
-    margin-right: 40px;
+  ul {
+    list-style-position: inside;
+
+    li {
+      margin-left: 10px;
+    }
+  }
+
+  @media screen and (min-width: 750px) {
+    flex-direction: row;
+    justify-content: center;
+
+    div:nth-child(2) {
+      margin-left: 40px;
+    }
+
+    div:last-child {
+      margin-left: 40px;
+    }
+
+    ul {
+      width: 100%;
+      list-style-position: inside;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    justify-content: space-around;
+
+    ul {
+      width: 100%;
+      margin-right: 30px;
+
+      li {
+        margin-left: 0px;
+      }
+    }
   }
 `;
 
 export const HardBox = styled.div`
   display: flex;
-  width: 793px;
+  /* width: 793px; */
   justify-content: flex-end;
+
+  @media screen and (min-width: 750px) {
+    justify-content: center;
+    display: flex;
+  }
+
+  @media screen and (min-width: 1024px) {
+    width: 870px;
+    justify-content: flex-end;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 782px;
+    justify-content: flex-end;
+  }
 `;
 
 export const Wrapper = styled.div`
-  max-width: 671px;
-  padding-left: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  p {
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 285px;
+    white-space: break-spaces;
+  }
 
   h1 {
-    font-size: 40px;
+    font-size: 2.2rem;
+    margin-top: 0.8rem;
     color: #46b47a;
     padding-bottom: 20px;
   }
 
-  p {
-    font-size: 20px;
-    white-space: break-spaces;
+  @media screen and (min-width: 750px) {
+    p {
+      font-size: 1.2rem;
+      max-width: 465px;
+      white-space: break-spaces;
+    }
   }
 
-  @media screen and (max-width: 480px) {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-right: 0;
+  @media screen and (min-width: 1024px) {
+    max-width: 560px;
+    padding-left: 60px;
+    align-items: flex-start;
+
+    h1 {
+      font-size: 2 rem;
+    }
 
     p {
-      text-align: center;
+      font-size: 1.1rem;
+      white-space: break-spaces;
+      text-align: start;
+      max-width: 620px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 671px;
+    padding-left: 60px;
+    align-items: flex-start;
+
+    p {
+      font-size: 20px;
+      white-space: break-spaces;
+      text-align: start;
+      max-width: 620px;
     }
   }
 `;
@@ -124,10 +245,10 @@ export const Linkedin = styled.span`
 
   a {
     :link {
-      color: #212121;
+      color: #8c8c8c;
     }
     :active {
-      color: #212121;
+      color: #8c8c8c;
     }
     :visited {
       color: #8c8c8c;
@@ -147,10 +268,10 @@ export const Insta = styled.span`
 
   a {
     :link {
-      color: #212121;
+      color: #8c8c8c;
     }
     :active {
-      color: #212121;
+      color: #8c8c8c;
     }
     :visited {
       color: #8c8c8c;
@@ -164,6 +285,9 @@ export const Insta = styled.span`
 export const Wave = styled.div`
   height: 130px;
   background-color: #212121;
+  @media screen and (min-width: 750px) {
+    /* margin-top: 80px; */
+  }
   clip-path: polygon(
     100% 0%,
     0% 0%,
