@@ -1,7 +1,6 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 import { FaBars } from 'react-icons/fa';
-import { useNavigate } from 'react-router-dom';
 import { animateScroll as scroll } from 'react-scroll';
 import {
   Nav,
@@ -16,7 +15,6 @@ import {
 } from './styles';
 
 const Navbar = ({ toggle }) => {
-  const navigate = useNavigate();
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -93,7 +91,7 @@ const Navbar = ({ toggle }) => {
 
             <NavBtn>
               <a
-                href="https://drive.google.com/file/d/1tIAcp1D9t2AO0GrhAzpxlmfpnmafZpse/view"
+                href="https://drive.google.com/file/d/1agZoZ2JYz-Aum7Ubm5q_H3CPsmKLpGxl/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >

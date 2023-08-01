@@ -78,6 +78,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 1024px) {
     max-width: 1020px;
+    align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
@@ -259,6 +260,5 @@ export const Techh = styled.span`
   margin-right: 8px;
 
   @media screen and (min-width: 1024px) {
-    margin-right: 10px;
   }
 `;

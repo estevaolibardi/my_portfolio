@@ -21,13 +21,15 @@ const ProjectLeftSide = ({
     <>
       <Wrapper>
         <Container>
-          <img
-            data-aos="example-anim2"
-            data-aos-delay="300"
-            data-aos-anchor-placement="center-center"
-            src={img}
-            alt="hamburguer"
-          />
+          <a href={urlProject} target="_blank" rel="noreferrer">
+            <img
+              data-aos="example-anim2"
+              data-aos-delay="300"
+              data-aos-anchor-placement="center-center"
+              src={img}
+              alt="hamburguer"
+            />
+          </a>
           <WrapperDescript>
             <BoxTitle>
               <a href={urlProject} target="_blank" rel="noreferrer">

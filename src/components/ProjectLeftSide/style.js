@@ -81,6 +81,7 @@ export const Container = styled.div`
 
   @media screen and (min-width: 1024px) {
     max-width: 1020px;
+    align-items: center;
     display: flex;
     justify-content: center;
     flex-direction: row;

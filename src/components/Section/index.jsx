@@ -13,14 +13,14 @@ const Section = ({ children, register }) => {
         <Content data-aos="fade-right" data-aos-duration="3000">
           <div>
             <TitleH2>Olá, meu nome é</TitleH2>
-            <Title>Estevão Libardi Desenvolvedor Front-End</Title>
+            <Title>Estevão Libardi Desenvolvedor Full-Stack</Title>
           </div>
 
           <Description>
             Desenvolvedor Web Full Stack pela Kenzie Academy Brasil. Ao longo de
             mais de 2000 horas de curso, desenvolvi vários projetos, soft skills
             e diversas experiências trabalhando em grupo. No momento estou
-            buscando uma oportunidade na área.
+            buscando uma oportunidade na área!
           </Description>
         </Content>
         <Fig
@@ -29,7 +29,7 @@ const Section = ({ children, register }) => {
           onMouseOver={() => setOver(true)}
           onMouseOut={() => setOver(false)}
         >
-          <img src={over ? Ham : Dev} />
+          <img src={over ? Ham : Dev} alt="dev_fig" />
         </Fig>
       </Container>
     </>

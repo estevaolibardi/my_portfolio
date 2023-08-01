@@ -16,7 +16,6 @@ import {
 import Libardi from '../../assets/me.jpg';
 import { BsInstagram } from 'react-icons/bs';
 import { FaLinkedin } from 'react-icons/fa';
-import { RiInstagramFill } from 'react-icons/ri';
 
 const About = () => {
   return (
@@ -24,7 +23,7 @@ const About = () => {
       <Wave></Wave>
       <Box>
         <ImgContainer>
-          <img src={Libardi} />
+          <img src={Libardi} alt="perfil_photo" />
         </ImgContainer>
 
         <Wrapper>
@@ -32,7 +31,7 @@ const About = () => {
 
           <Icons>
             <Linkedin>
-              <a href="https://www.linkedin.com/in/estevaolibardi/">
+              <a href="https://www.linkedin.com/in/estevao-libardi/">
                 <FaLinkedin size={29} />
               </a>
             </Linkedin>
@@ -52,8 +51,7 @@ const About = () => {
             Sempre tive muito contato com a tecnologia, mas só fui conhecer a
             área de programação recentemente. Acho fascinante estar em uma área
             em que estou constantemente aprendendo novas tecnologias, resolvendo
-            problemas, exercitando raciocínio lógico e tendo a perspectiva de
-            ser um profissional cada vez mais completo e valorizado.
+            problemas, e fazendo parte do progresso e inovação!
           </p>
         </Wrapper>
       </Box>
@@ -68,24 +66,24 @@ const About = () => {
                   <li>CSS</li>
                   <li>Javascript</li>
                   <li>React Js</li>
-                  <li>Git</li>
+                  <li>Next Js</li>
                 </ul>
               </div>
               <div>
                 <ul>
-                  <li>Scrum</li>
                   <li>Node Js</li>
                   <li>Express</li>
+                  <li>TypeORM</li>
+                  <li>Prisma</li>
                   <li>Typescript</li>
-                  <li>Redux</li>
                 </ul>
               </div>
               <div>
                 <ul>
                   <li>Python</li>
                   <li>Django</li>
-                  <li>Docker</li>
-                  <li>Context-Api</li>
+                  <li>Postgresql</li>
+                  <li>Git</li>
                   <li>Styled-C</li>
                 </ul>
               </div>
