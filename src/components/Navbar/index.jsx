@@ -91,7 +91,7 @@ const Navbar = ({ toggle }) => {
 
             <NavBtn>
               <a
-                href="https://drive.google.com/file/d/1lBgxp3P8z3CPFRbAYEihlgedDAcNuhZX/view"
+                href="https://drive.google.com/file/d/1iLiKMxpJngVolitwHIecrvLncS7YGdIZ/view?usp=sharing"
                 target="_blank"
                 rel="noreferrer"
               >
